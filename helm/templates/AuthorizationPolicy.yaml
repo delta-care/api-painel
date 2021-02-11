@@ -1,0 +1,19 @@
+apiVersion: "security.istio.io/v1beta1"
+kind: AuthorizationPolicy
+metadata:
+  name: {{.Values.app.name}}
+spec:
+  selector:
+    matchLabels:
+      app: {{.Values.app.name}}
+  action: ALLOW
+  rules:
+    - when:
+      - key: request.auth.presenter
+        values:
+          - deltacare
+    - from:
+      - source:
+          namespaces:
+            - dev
+            - prd
