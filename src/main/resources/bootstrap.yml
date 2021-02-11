@@ -1,0 +1,12 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: api-painel
+  profiles:
+    active: dev
+  cloud:
+    kubernetes:
+      enabled: false
+      discovery:
+        enabled: false
