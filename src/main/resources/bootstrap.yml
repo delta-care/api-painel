@@ -5,8 +5,10 @@ spring:
     name: api-painel
 #  profiles:
 #    active: dev
-#  cloud:
-#    kubernetes:
-#      enabled: false
-#      discovery:
-#        enabled: false
+  cloud:
+    kubernetes:
+      config:
+        name: api-painel
+        enabled: true
+      reload:
+        enabled: true
