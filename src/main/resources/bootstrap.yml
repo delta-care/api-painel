@@ -9,6 +9,5 @@ spring:
     kubernetes:
       config:
         name: api-painel
-        enabled: true
       reload:
         enabled: true
