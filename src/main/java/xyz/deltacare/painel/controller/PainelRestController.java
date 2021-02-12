@@ -11,17 +11,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/painel")
-public class PainelController {
+public class PainelRestController {
 
     private final PainelService painelService;
 
-    public PainelController(PainelService painelService) {
+    public PainelRestController(PainelService painelService) {
         this.painelService = painelService;
-    }
-
-    @GetMapping("/{codigo}")
-    public Painel obterPorCodigo(@PathVariable String codigo) {
-        return this.painelService.obterPorCodigo(codigo);
     }
 
     @GetMapping

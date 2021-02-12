@@ -3,9 +3,11 @@ package xyz.deltacare.painel.domain;
 import lombok.Data;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.io.Serializable;
+
 @Data
 @Document
-public class Beneficiario {
+public class Beneficiario implements Serializable {
     String plano;
     String mes;
     String valor;
