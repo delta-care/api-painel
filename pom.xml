@@ -147,12 +147,12 @@
                 <sonar.host.url>https://sonarcloud.io/</sonar.host.url>
                 <sonar.exclusions>
                     src/main/java/**/PainelApplication.java,
-                    src/main/java/**/controller/**,
                     src/main/java/**/configuration/**,
+                    src/main/java/**/controller/**,
                     src/main/java/**/domain/**,
                     src/main/java/**/dto/**,
-                    src/main/java/**/mapper/**
-                    src/main/java/**/repository/**
+                    src/main/java/**/mapper/**,
+                    src/main/java/**/repository/**,
                     src/main/java/**/service/**
                 </sonar.exclusions>
             </properties>
