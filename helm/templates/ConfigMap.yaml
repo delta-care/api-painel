@@ -10,9 +10,10 @@ data:
         host: 3.128.159.68
         port: 6379
         password:
-        time-to-live: 20
       cache:
         type: redis
+        redis:
+          time-to-live: 30000
       data:
         mongodb:
           uri: mongodb://deltacare:deltacare@cluster0-shard-00-00.nzhz7.mongodb.net:27017,cluster0-shard-00-01.nzhz7.mongodb.net:27017,cluster0-shard-00-02.nzhz7.mongodb.net:27017/deltacare?ssl=true&replicaSet=atlas-w8mek1-shard-0&authSource=admin&retryWrites=true&w=majority
@@ -36,9 +37,10 @@ data:
         host: 3.128.159.68
         port: 6379
         password:
-        time-to-live: 20
       cache:
         type: redis
+        redis:
+          time-to-live: 30000
       data:
         mongodb:
           uri: mongodb://deltacare:deltacare@cluster0-shard-00-00.nzhz7.mongodb.net:27017,cluster0-shard-00-01.nzhz7.mongodb.net:27017,cluster0-shard-00-02.nzhz7.mongodb.net:27017/deltacare?ssl=true&replicaSet=atlas-w8mek1-shard-0&authSource=admin&retryWrites=true&w=majority
