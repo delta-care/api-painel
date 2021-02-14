@@ -10,7 +10,7 @@ data:
         host: 3.128.159.68
         port: 6379
         password:
-        time-to-live: 60
+        time-to-live: 20
       cache:
         type: redis
       data:
@@ -36,7 +36,7 @@ data:
         host: 3.128.159.68
         port: 6379
         password:
-        time-to-live: 60
+        time-to-live: 20
       cache:
         type: redis
       data:
