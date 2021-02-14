@@ -3,8 +3,8 @@ server:
 spring:
   application:
     name: api-painel
-#  profiles:
-#    active: dev
+  #  profiles:
+  #    active: dev
   cloud:
     kubernetes:
       config:
