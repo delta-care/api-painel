@@ -21,7 +21,7 @@ public class PainelEventController {
         this.painelService = painelService;
     }
 
-    @KafkaListener(topics = "beneficiario")
+    @KafkaListener(topics = "novobeneficiario")
     public void save(final String message, final Acknowledgment acknowledgment) throws JsonProcessingException {
         logger.info("Lendo mensagem: " + message);
         NovoBeneficiarioDto novoBeneficiarioDto = objectMapper.readValue(message, NovoBeneficiarioDto.class);
