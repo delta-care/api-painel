@@ -28,7 +28,7 @@ podTemplate(
     def K8S_NAMESPACE='dev'
     def OBJ_REPO_GIT
     
-    node('deltacare') {
+    node(LABEL_ID) {
         
         stage('Checkout') {
             OBJ_REPO_GIT = git branch: 'main', credentialsId: 'github', url: URL_REPO_GIT
