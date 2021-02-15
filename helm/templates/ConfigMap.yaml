@@ -29,7 +29,7 @@ data:
           missing-topics-fatal: false
           ack-mode: manual_immediate
     app:
-      topic: red   
+      topic: novobeneficiariodev
     ---
     spring:
       profiles: prd
@@ -56,4 +56,4 @@ data:
           missing-topics-fatal: false
           ack-mode: manual_immediate
     app:
-      topic: red  
+      topic: novobeneficiarioprd
